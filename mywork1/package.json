@@ -1,0 +1,27 @@
+{
+  "name": "myreactproject",
+  "version": "1.0.0",
+  "description": "beginning of react",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "scripts": {
+    "test": "getreaction",
+    "build" : "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "asitis"
+  },
+  "keywords": [
+    "lear",
+    "react"
+  ],
+  "author": "nehal",
+  "license": "ISC"
+}

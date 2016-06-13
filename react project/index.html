@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Material-UI Example</title>
+
+
+
+</head>
+
+<body>
+  <div id="hello">
+    
+damn!
+  </div>
+ <script src="bundle.js"></script>
+  <!-- This script adds the Roboto font to our project. For more detail go to this site:  http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500 -->
+  <script type = "text/jsx">
+import React from 'react';
+import ReactDOM from 'react-dom';
+ 
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello</h1>
+  }
+}
+ 
+ReactDOM.render(<Hello/>, document.getElementById('hello'));
+  </script>
+ 
+</body>
+
+</html>

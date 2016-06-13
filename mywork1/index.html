@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://fb.me/react-15.1.0.js"></script>
+      <script src="https://fb.me/react-dom-15.1.0.js"></script>
+     
+    </head>
+  <body>
+    <div id="abc">
+    </div>
+    <script>
+var Test = React.createClass({
+    render: function() {
+        var stationComponents = this.props.stations.map(function(station) {
+            return <div className="station">{station.call}</div>;
+        });
+        return <div>{stationComponents}</div>;
+    }
+});
+ 
+ 
+ 
+var stations = [
+  {call:'station one',frequency:'000'},
+  {call:'station two',frequency:'001'}
+] 
+React.render(
+  <Test stations={stations}/>, 
+  document.getElementById('container')
+
+  );
+
+      </script>
+
+
+  </body>
+</html>
